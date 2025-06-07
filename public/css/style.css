@@ -1,0 +1,113 @@
+/* 首頁特定樣式 */
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 3px;
+    background: #007bff;
+}
+
+/* 關於我頁面樣式 */
+.about-hero {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+}
+
+.profile-image {
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.skill-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.skill-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #007bff;
+}
+
+.skill-card ul li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.skill-card i.fa-check {
+    color: #28a745;
+}
+
+/* 聯絡表單頁面樣式 */
+.contact-hero {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contact-info i {
+    color: #007bff;
+}
+
+.contact-form .form-control {
+    border: 2px solid #e9ecef;
+    padding: 0.8rem;
+}
+
+.contact-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn-primary {
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+}

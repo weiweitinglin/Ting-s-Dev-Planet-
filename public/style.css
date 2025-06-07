@@ -1,0 +1,52 @@
+Users/linweiting/Desktop/Ting's Dev Planet/ting_planet/public/css/style.css
+/* 全域設定 */
+body {
+    font-family: "Microsoft JhengHei", sans-serif;
+    line-height: 1.6;
+}
+
+/* 導航列 */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* 首頁主視覺 */
+.hero {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* 文章卡片 */
+.card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* 作品集 */
+.portfolio-item {
+    margin-bottom: 2rem;
+}
+
+/* 頁尾 */
+footer {
+    margin-top: auto;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff !important;
+}
