@@ -3,7 +3,7 @@
 個人網站專案，使用 PHP 與 MariaDB 開發。
 
 ## 網站連結
-https://您的使用者名稱.github.io/ting_planet/
+https://weiweitinglin.github.io/ting_planet/
 
 ## 安裝步驟
 
