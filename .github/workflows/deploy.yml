@@ -4,22 +4,24 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    
-    - name: Setup PHP
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: '8.0'
-        
-    - name: Install Dependencies
-      run: composer install --no-dev --optimize-autoloader
-        
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+      - uses: actions/checkout@v3
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          force_orphan: true          # 確保在專案目錄中
+          cd "/Users/linweiting/Desktop/Ting's Dev Planet/ting_planet"
+          
+          # 提交變更
+          git add .github/workflows/deploy.yml
+          git commit -m "更新部署設定"
+          git push origin main
