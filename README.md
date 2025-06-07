@@ -2,6 +2,9 @@
 
 個人網站專案，使用 PHP 與 MariaDB 開發。
 
+## 網站連結
+https://您的使用者名稱.github.io/ting_planet/
+
 ## 安裝步驟
 
 1. 複製專案
@@ -30,4 +33,5 @@ php install.php
 - Apache 2.4+
 
 ## 授權方式
-MIT License
+MIT Licensegit add .
+git commit -m "初始化專案"
